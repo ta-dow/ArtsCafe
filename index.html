@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Monoton|Raleway|Sacramento" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="static/css/main.css">
+		<title>Arts Cafe Mtl</title>
+	</head>
+
+	<body>
+		<center>
+			<div class="top-section">
+				<div class="bg"></div>
+                <!-- <i class="down-arrow"></i> -->
+                <i class="down-arrow" href="#main" style="cursor: pointer;"></i>
+				<div class="box">
+					<h1 style="padding-top: 30%;">Arts Café<br><span>Montréal</span></h1>
+					<br>
+					<h1 style="font-size: 15px">201 Ave. Fairmount, mtl
+						<br>(514) 274-0919
+	    	        </h1>
+				</div>
+			</div>
+
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="static/images/pins2.png" class="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ml-auto">
+                            <a class="nav-item nav-link" href="#">menu</a>
+                            <a class="nav-item nav-link" href="#">gallery</a>
+                            <a class="nav-item nav-link" href="#">team</a>
+                            <a class="nav-item nav-link" href="#">contact</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <br>
+            <a id="main"></a>
+			<div class="container">
+				<div class="row">
+				    <div class="col">
+						<img src="static/images/bowl.jpg" class="img-fluid">
+				    </div>
+				    <div class="col">
+				    	<img src="static/images/leaf.jpg" class="img-fluid">
+				    </div>
+				</div>
+				<br>
+				<div class="row">
+				    <div class="col">
+						<img src="static/images/hummus.jpg" class="img-fluid">
+				    </div>
+				    <div class="col">
+				    	<img src="static/images/gourds.jpg" class="img-fluid">
+				    </div>
+				</div>
+				<br><br><br><br>
+                <h2>welcome to our café</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <br><br>
+				<hr>
+				<br><br>
+                <h2>where to find us</h2>
+                <br>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.4354846155215!2d-73.59918898453394!3d45.521441437643226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9197fb993a4d9%3A0x99c55326b9aeb844!2sArts+Caf%C3%A9!5e0!3m2!1sen!2sca!4v1553650655098"></iframe>
+
+				<br><br><br><br>
+
+				<h2>opening hours</h2>
+                <br>
+	            <p>
+	            	Monday to Friday: 9am-6pm<br>
+	            	Saturday and Sunday: 10am-4pm
+	            </p>
+	            <br><br>
+                <div class="row">
+                    <div class="col">
+                        <img src="static/images/table.jpg" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="static/images/cat.jpg" class="img-fluid">
+                    </div>
+                </div>
+	            <br><br>
+                <hr>
+                <br><br>
+	            <div>
+                	<a href="https://www.facebook.com/ArtsCafeMontreal/" target="_blank">
+                		<img src="static/images/sm-facebook.png" class="btn-social">
+                	</a>
+
+                	<a href="mailto:info@artscafemontreal.com" target="_blank">
+                		<img src="static/images/sm-email.png" class="btn-social">
+                	</a>
+
+                	<a href="https://www.instagram.com/artscafemtl/" target="_blank">
+                		<img src="static/images/sm-instagram.png" class="btn-social">
+                	</a>
+                </div>
+                <br>
+                <small>
+                	<a href="#">Arts Café Montréal © 2019</a>
+                </small>
+                <br><br>
+			</div>
+		</center>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="static/js/bootstrap.js"></script>
+        <script type="text/javascript">
+            document.querySelectorAll('*[href^="#"]').forEach(anchor => {
+
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+	</body>
+</html>

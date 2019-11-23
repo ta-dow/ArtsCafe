@@ -1,0 +1,140 @@
+body, 
+html {
+    width: 100%;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    background-color: #f8f9fa;
+}
+a {
+    color: initial;
+}
+a:hover {
+    color: initial;
+    text-decoration: none;
+}
+h1 {
+    color: #bf7a1e;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 40px;
+}
+h1 span {
+    font-family: 'Monoton', cursive;
+    font-size: 34px;
+}
+h2 {
+    font-family: 'Monoton', cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+p {
+    font-size: 16px;
+    line-height: 2;
+}
+small {
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.top-section {
+    position: relative;
+    height: 100vh;
+    min-height: 800px;
+    background-size: cover;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-image: url("../images/plant2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: brightness(70%);
+    animation: fadein 5s ease forwards;
+}
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: #f7f7f7;
+    z-index: 200;
+    position: relative;
+    outline: solid 2px #bf7a1e;
+    outline-offset: -30px;
+    border-radius: 8px;
+    padding: 28px;
+    margin: 40px;
+}
+.down-arrow {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    z-index: 100;
+    color: #ffffff;
+    border: solid #ffffff;
+    filter: brightness(70%);
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.logo {
+    height: 50px;
+    transition: transform 4s ease;
+}
+.logo:hover {
+    transform: rotate(360deg);
+    transition: transform 4s ease;
+}
+.navbar {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    opacity: 0.95;
+    border-bottom: 1px solid #3E3C39;
+}
+.nav-link {
+    padding: 1.5rem 1rem;
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 2.5rem;
+        font-size: 14px;
+    }
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #be7b1d;
+}
+
+iframe {
+    width: 100%;
+    border: 0;
+    height: 450px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.02);
+}
+.container img {
+    border-radius: 8px;
+}
+.btn-social {
+    width: 50px;
+    position: relative;
+    opacity: 0.5;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin: 7px;
+}
+.btn-social:hover {
+    opacity: 1;
+    transform: scale(1.5, 1.5);
+}
