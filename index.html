@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Arts Cafe Mtl</title>
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
     	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
     	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Monoton|Raleway|Sacramento" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="static/css/main.css">
-		<title>Arts Cafe Mtl</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
 	</head>
 
 	<body>
 		<center>
 			<div class="top-section">
 				<div class="bg"></div>
-                <!-- <i class="down-arrow"></i> -->
                 <i class="down-arrow" href="#main" style="cursor: pointer;"></i>
 				<div class="box">
-					<h1 style="padding-top: 30%;">Arts Café<br><span>Montréal</span></h1>
+					<h1 style="padding-top: 30%;">Café Demo<br><span>Montreal</span></h1>
 					<br>
-					<h1 style="font-size: 15px">201 Ave. Fairmount, mtl
-						<br>(514) 274-0919
+					<h1 style="font-size: 15px">Ave. Fairmount, mtl
 	    	        </h1>
 				</div>
 			</div>
@@ -27,7 +26,7 @@
             <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                        <img src="static/images/pins2.png" class="logo">
+                        <img src="static/images/pins.png" class="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -71,8 +70,7 @@
 				<br><br>
                 <h2>where to find us</h2>
                 <br>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.4354846155215!2d-73.59918898453394!3d45.521441437643226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9197fb993a4d9%3A0x99c55326b9aeb844!2sArts+Caf%C3%A9!5e0!3m2!1sen!2sca!4v1553650655098"></iframe>
-
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7556.803591023619!2d-73.61672952862051!3d45.48657671741652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc919fa77b2df69%3A0x4a430fcebf116d43!2sSaint%20Joseph&#39;s%20Oratory%20of%20Mount%20Royal!5e0!3m2!1sen!2sca!4v1625204707756!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 				<br><br><br><br>
 
 				<h2>opening hours</h2>
@@ -94,21 +92,23 @@
                 <hr>
                 <br><br>
 	            <div>
-                	<a href="https://www.facebook.com/ArtsCafeMontreal/" target="_blank">
+                	<a href="#">
                 		<img src="static/images/sm-facebook.png" class="btn-social">
                 	</a>
 
-                	<a href="mailto:info@artscafemontreal.com" target="_blank">
+                	<a href="#">
                 		<img src="static/images/sm-email.png" class="btn-social">
                 	</a>
 
-                	<a href="https://www.instagram.com/artscafemtl/" target="_blank">
+                	<a href="#">
                 		<img src="static/images/sm-instagram.png" class="btn-social">
                 	</a>
                 </div>
                 <br>
                 <small>
-                	<a href="#">Arts Café Montréal © 2019</a>
+                	<b><a href="https://rubinwebdesign.com/contact.html" target="_blank">Café Demo Site for Sale</a></b>
+                	<br>
+                	Website Created by <a href="http://rubinwebdesign.com/" target="_blank">Rubin Web Design</a>
                 </small>
                 <br><br>
 			</div>
@@ -116,15 +116,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="static/js/bootstrap.js"></script>
         <script type="text/javascript">
-            document.querySelectorAll('*[href^="#"]').forEach(anchor => {
-
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
+            $(function () {
+              $(document).scroll(function () {
+                var $nav = $(".navbar-expand-lg");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+              });
             });
         </script>
 	</body>
