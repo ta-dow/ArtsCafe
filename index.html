@@ -9,7 +9,6 @@
         <link rel="stylesheet" type="text/css" href="static/css/main.css">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
 	</head>
-
 	<body>
 		<center>
 			<div class="top-section">
@@ -21,7 +20,6 @@
 					<h1 style="font-size: 15px">This website is for sale</h1>
 				</div>
 			</div>
-
             <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <a class="navbar-brand" href="#">
@@ -41,8 +39,11 @@
                 </div>
             </nav>
             <br>
-            <a id="main"></a>
-			<div class="container">
+			<div class="container" id="main" style="padding-top: 120px;">
+				<h2>welcome to our café</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <br><br>
 				<div class="row">
 				    <div class="col">
 						<img src="static/images/bowl.jpg" class="img-fluid">
@@ -61,17 +62,6 @@
 				    </div>
 				</div>
 				<br><br><br><br>
-                <h2>welcome to our café</h2>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <br><br>
-				<hr>
-				<br><br>
-                <h2>where to find us</h2>
-                <br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.9022982052134!2d-73.6190417235051!3d45.491912171074354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc919fa77b2df69%3A0x4a430fcebf116d43!2sSaint%20Joseph&#39;s%20Oratory%20of%20Mount%20Royal!5e0!3m2!1sen!2sca!4v1715013244061!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				<br><br><br><br>
-
 				<h2>opening hours</h2>
                 <br>
 	            <p>
@@ -79,7 +69,7 @@
 	            	<br>
 	            	Saturday and Sunday: 10am-4pm
 	            </p>
-	            <br><br>
+	            <br><br><br>
                 <div class="row">
                     <div class="col">
                         <img src="static/images/table.jpg" class="img-fluid">
@@ -116,12 +106,14 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="static/js/bootstrap.js"></script>
         <script type="text/javascript">
-            $(function () {
-              $(document).scroll(function () {
-                var $nav = $(".navbar-expand-lg");
-                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-              });
-            });
+        	document.addEventListener("DOMContentLoaded", function() {
+        	    var downArrow = document.querySelector(".down-arrow");
+        	    var mainDiv = document.querySelector("#main");
+
+        	    downArrow.addEventListener("click", function() {
+        	        mainDiv.scrollIntoView({ behavior: 'smooth' });
+        	    });
+        	});
         </script>
 	</body>
 </html>

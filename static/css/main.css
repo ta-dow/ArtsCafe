@@ -1,5 +1,4 @@
-body, 
-html {
+body, html {
     width: 100%;
     margin: 0;
     font-family: 'Raleway', sans-serif;
@@ -86,9 +85,9 @@ small {
     z-index: 100;
     color: #ffffff;
     border: solid #ffffff;
-    filter: brightness(70%);
-    border-width: 0 3px 3px 0;
-    padding: 3px;
+    filter: brightness(90%);
+    border-width: 0 5px 5px 0;
+    padding: 5px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
